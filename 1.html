@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>용슐랭 가이드</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  </head>
+
+
+  <body>
+    <script src="color.js"></script>
+<script src="hashtagrecognize.js"></script>
+<style media="screen">
+  .container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.container img {
+  width: 50%;
+  height: auto;
+}
+
+.container .btn {
+  position: absolute;
+  top: 45%;
+  left: 20%;
+  transform: translate(-25%, -25%);
+  background-color: pink;
+  -ms-transform: translate(-25%, -25%);
+
+  color: black;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container .btn:hover {
+  background-color: red;
+}
+.ggul{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+}
+.whole{
+  display: grid;
+  grid-template-columns:160px 1fr;
+}
+.ggulu{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 200px;}
+
+</style>
+
+
+<a href="home.html"><h1 id="main">용슐랭 가이드</h1></a>
+<div class="whole">
+
+<div id='manu'>
+  <div id='yamo'>
+   <input id="sec" type="button" value="야간모드" onclick="nighthandler(this);"></div>
+<ul id='menu'>
+  <li><h2><a href="1.html">movie</a></h2></li;>
+  <li><h2><a href="2.html">music</a></h2></li>
+  <li><h2><a href="3.html">travel</a></h2></li>
+  <li><h2><a href="4.html">book</a></h2></li>
+</ul>
+</div>
+
+<div id="contents">
+<div class="ggul" id='액시트'>
+<div class="container">
+  <img src="액시트.png" alt="Snow">
+  <input type="button" name="button" class="btn" value="like" onclick="recognize.saveinterest(액시트)">
+
+</div>
+<div class="container" id='날씨의아이'>
+  <img src="날씨의아이.png" alt="Snow">
+  <input type="button" name="button" class="btn" value="like" onclick="recognize.saveinterest(날씨의아이)">
+
+</div>
+<div class="container" id='스타이즈본'>
+  <img src="스타이즈본.png" alt="Snow">
+  <input type="button" name="button" class="btn" value="like" onclick="recognize.saveinterest(스타이즈본)">
+
+</div>
+<div class="container" id='감기'>
+  <img src="감기.png" alt="Snow">
+  <input type="button" name="button" class="btn" value="like" onclick="recognize.saveinterest(감기)">
+
+</div>
+<div class="container" id='기생충'>
+  <img src="기생충.png" alt="Snow">
+  <input type="button" name="button" class="btn" value="like" onclick="recognize.saveinterest(기생충)">
+
+</div>
+</div>
+<div class="ggul">
+<div class="container" id='내부자들'>
+  <img src="내부자들.png" alt="Snow">
+  <input type="button" name="button" class="btn" value="like" onclick="recognize.saveinterest(내부자들)">
+
+</div>
+<div class="container" id='너의결혼식'>
+  <img src="너의결혼식.png" alt="Snow">
+  <input type="button" name="button" class="btn" value="like" onclick="recognize.saveinterest(너의결혼식)">
+
+</div>
+<div class="container" id='라라랜드'>
+  <img src="라라랜드.png" alt="Snow">
+  <input type="button" name="button" class="btn" value="like" onclick="recognize.saveinterest(라라랜드)">
+
+</div>
+<div class="container" id='랑종'>
+  <img src="랑종.png" alt="Snow">
+  <input type="button" name="button" class="btn" value="like" onclick="recognize.saveinterest(랑종)">
+
+</div>
+<div class="container" id='메이즈러너'>
+  <img src="메이즈러너.png" alt="Snow">
+  <input type="button" name="button" class="btn" value="like" onclick="recognize.saveinterest(메이즈러너)">
+
+</div>
+</div>
+<div class="ggul">
+<div class="container" id='버드박스'>
+  <img src="버드박스.png" alt="Snow">
+  <input type="button" name="button" class="btn" value="like" onclick="recognize.saveinterest(버드박스)">
+
+</div>
+<div class="container" id='범죄도시'>
+  <img src="범죄도시.png" alt="Snow">
+  <input type="button" name="button" class="btn" value="like" onclick="recognize.saveinterest(범죄도시)">
+
+</div>
+<div class="container" id='분노의질주'>
+  <img src="분노의질주.png" alt="Snow">
+  <input type="button" name="button" class="btn" value="like" onclick="recognize.saveinterest(분노의질주)">
+
+</div>
+<div class="container" id='신세계'>
+  <img src="신세계.png" alt="Snow">
+  <input type="button" name="button" class="btn" value="like" onclick="recognize.saveinterest(신세계)">
+
+</div>
+<div class="container" id='아이언맨'>
+  <img src="아이언맨.png" alt="Snow">
+  <input type="button" name="button" class="btn" value="like" onclick="recognize.saveinterest(아이언맨)">
+
+</div>
+</div>
+<div class="ggul">
+<div class="container" id='어바웃타임'>
+  <img src="어바웃타임.png" alt="Snow">
+  <input type="button" name="button" class="btn" value="like" onclick="recognize.saveinterest(어바웃타임)">
+
+</div>
+<div class="container" id='어벤져스'>
+  <img src="어벤져스.png" alt="Snow">
+  <input type="button" name="button" class="btn" value="like" onclick="recognize.saveinterest(어벤져스)">
+
+</div>
+<div class="container" id='오백일의써머'>
+  <img src="오백일의써머.png" alt="Snow">
+  <input type="button" name="button" class="btn" value="like" onclick="recognize.saveinterest(오백일의써머)">
+
+</div>
+<div class="container" id='완벽한타인'>
+  <img src="완벽한타인.png" alt="Snow">
+  <input type="button" name="button" class="btn" value="like" onclick="recognize.saveinterest(완벽한타인)">
+
+</div>
+<div class="container" id='위대한쇼맨'>
+  <img src="위대한쇼맨.png" alt="Snow">
+  <input type="button" name="button" class="btn" value="like" onclick="recognize.saveinterest(위대한쇼맨)">
+
+</div>
+</div>
+<div class="ggulu">
+<div class="container" id='인셉션'>
+  <img src="인셉션.png" alt="Snow">
+  <input type="button" name="button" class="btn" value="like" onclick="recognize.saveinterest(인셉션)">
+
+</div>
+<div class="container" id='인터스텔라'>
+  <img src="인터스텔라.png" alt="Snow">
+  <input type="button" name="button" class="btn" value="like" onclick="recognize.saveinterest(인터스텔라)">
+
+</div>
+<div class="container" id='쥬만지'>
+  <img src="쥬만지.png" alt="Snow">
+  <input type="button" name="button" class="btn" value="like" onclick="recognize.saveinterest(쥬만지)">
+
+</div>
+<div class="container" id='판도라'>
+  <img src="판도라.png" alt="Snow">
+  <input type="button" name="button" class="btn" value="like" onclick="recognize.saveinterest(판도라)">
+
+</div>
+
+
+ <input id="result" type="button" value="결과" onclick="recognize.selectmovie(interest)">
+</div>
+</div>
+</div>
+</body>
+</html>
