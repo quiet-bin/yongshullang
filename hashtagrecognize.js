@@ -58,6 +58,12 @@ var resolt = [];
 
 
 function add_img(name) {
+  if(name==="월드워z"){
+  var img = document.createElement('img');
+    img.src = '월드워z.png';}
+  if(name==="토르"){
+  var img = document.createElement('img');
+    img.src = '토르.png';}
   if(name==="가장보통의연애"){
   var img = document.createElement('img');
     img.src = '가장보통의연애.png';}
