@@ -58,6 +58,52 @@
   grid-template-columns: 1fr 1fr 1fr 1fr 200px;}
 
 </style>
+<script>
+function addimg(name) {
+	var img = document.createElement('img');
+    img.src = name;
+	document.getElementById('contents').appendChild(img);
+}
+
+function setInnerHTML() {
+  const element = document.getElementById('contents')
+  element.innerHTML=
+  '<ul><li>'+resolt[0]+"점"+
+  '</li><li>'+resolt[1]+"점"+
+  '</li><li>'+resolt[2]+"점"+
+  '</li><li>'+resolt[3]+"점"+
+  '</li><li>'+resolt[4]+"점"+
+  '</li><li>'+resolt[5]+"점"+
+  '</li><li>'+resolt[6]+"점"+
+  '</li><li>'+resolt[7]+"점"+
+  '</li><li>'+resolt[8]+"점"+
+  '</li><li>'+resolt[9]+"점"+
+  '</li><li>'+resolt[10]+"점"+
+  '</li><li>'+resolt[11]+"점"+
+  '</li></ul>'
+  add_img(resolt[0][0]);
+  add_img(resolt[1][0]);
+  add_img(resolt[2][0]);
+  add_img(resolt[3][0]);
+  add_img(resolt[4][0]);
+  add_img(resolt[5][0]);
+  add_img(resolt[6][0]);
+  add_img(resolt[7][0]);
+  add_img(resolt[8][0]);
+  add_img(resolt[9][0]);
+  add_img(resolt[10][0]);
+  add_img(resolt[11][0]);
+
+ }
+
+  function showresult(movie){
+recognize.selectmovie(movie);
+finish('none');
+setInnerHTML();
+
+  }
+
+</script>
 
 
 <a href="home.html"><h1 id="main">용슐랭 가이드</h1></a>
@@ -67,7 +113,7 @@
   <div id='yamo'>
    <input id="sec" type="button" value="야간모드" onclick="nighthandler(this);"></div>
 <ul id='menu'>
-  <li><h2><a href="1.html">movie</a></h2></li;>
+  <li><h2><a href="1.html">movie</a></h2></li>
   <li><h2><a href="2.html">music</a></h2></li>
   <li><h2><a href="3.html">travel</a></h2></li>
   <li><h2><a href="4.html">book</a></h2></li>
@@ -75,7 +121,7 @@
 </div>
 
 <div id="contents">
-<div class="ggul" id='액시트'>
+<div class="ggul" id='목록'>
 <div class="container">
   <img src="액시트.png" alt="Snow">
   <input type="button" name="button" class="btn" value="like" onclick="recognize.saveinterest(액시트)">
@@ -102,7 +148,7 @@
 
 </div>
 </div>
-<div class="ggul">
+<div class="ggul" id='목록'>
 <div class="container" id='내부자들'>
   <img src="내부자들.png" alt="Snow">
   <input type="button" name="button" class="btn" value="like" onclick="recognize.saveinterest(내부자들)">
@@ -129,7 +175,7 @@
 
 </div>
 </div>
-<div class="ggul">
+<div class="ggul" id='목록'>
 <div class="container" id='버드박스'>
   <img src="버드박스.png" alt="Snow">
   <input type="button" name="button" class="btn" value="like" onclick="recognize.saveinterest(버드박스)">
@@ -156,7 +202,7 @@
 
 </div>
 </div>
-<div class="ggul">
+<div class="ggul" id='목록'>
 <div class="container" id='어바웃타임'>
   <img src="어바웃타임.png" alt="Snow">
   <input type="button" name="button" class="btn" value="like" onclick="recognize.saveinterest(어바웃타임)">
@@ -183,7 +229,7 @@
 
 </div>
 </div>
-<div class="ggulu">
+<div class="ggulu" id='목록'>
 <div class="container" id='인셉션'>
   <img src="인셉션.png" alt="Snow">
   <input type="button" name="button" class="btn" value="like" onclick="recognize.saveinterest(인셉션)">
@@ -206,9 +252,10 @@
 </div>
 
 
- <input id="result" type="button" value="결과" onclick="recognize.selectmovie(interest)">
+ <input id="result" type="button" value="다음" onclick="showresult(interest)">
 </div>
 </div>
 </div>
+
 </body>
 </html>
