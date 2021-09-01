@@ -46,6 +46,8 @@ img{
 #contents{
   margin-top: 30px;
 }
+ul{list-style-type:none;
+font-size: 20px;}
 @media(max-width:650px) {
   #main{
     text-align: center;
